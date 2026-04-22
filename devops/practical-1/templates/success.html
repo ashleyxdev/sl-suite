@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Successful</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 60px auto;
+        }
+
+        .card {
+            background: #f0f8f0;
+            border-left: 4px solid #4CAF50;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>✅ Registration Successful!</h2>
+    <div class="card">
+        <p><strong>Name:</strong> {{ name }}</p>
+        <p><strong>Email:</strong> {{ email }}</p>
+        <p><strong>Event:</strong> {{ event }}</p>
+    </div>
+    <br>
+    <a href="/">← Register another</a>
+</body>
+
+</html>
