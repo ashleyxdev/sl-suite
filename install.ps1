@@ -30,19 +30,19 @@ $dlPracticals = @(
 
 # ── DevOps Practicals ─────────────────────────────────────────
 $devopsPracticals = @(
-    @{ id = 1; folder = "practical-1"; desc = "Docker Flask App";
+    @{ id = 1; folder = "practical-1"; desc = "User Registration with Flask and Docker";
        files = @("Dockerfile", "app.py", "requirements.txt", "templates/form.html", "templates/success.html", "theory.md") },
 
-    @{ id = 2; folder = "practical-2"; desc = "DevOps Practical 2";
+    @{ id = 2; folder = "practical-2"; desc = "Git and GitHub Source Code Management";
        files = @("practical.md", "theory.md") },
 
-    @{ id = 5; folder = "practical-5"; desc = "Docker Node.js App";
+    @{ id = 5; folder = "practical-5"; desc = "Docker Commands for Content Management";
        files = @("Dockerfile", "app.js", "docker-commands.md", "package-lock.json", "package.json", "views/index.ejs") },
 
-    @{ id = 8; folder = "practical-8"; desc = "Node.js Testing";
+    @{ id = 8; folder = "practical-8"; desc = "JavaScript Testing using Selenium";
        files = @("index.html", "package-lock.json", "package.json", "test.js") },
 
-    @{ id = 9; folder = "practical-9"; desc = "Docker Node.js CI/CD";
+    @{ id = 9; folder = "practical-9"; desc = "Selenium Test Cases for Containerized App";
        files = @("Dockerfile", "app.js", "package-lock.json", "package.json", "test.js", "views/index.ejs") }
 )
 

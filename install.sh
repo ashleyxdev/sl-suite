@@ -22,11 +22,11 @@ DL_PRACTICALS=(
 
 # ── DevOps Practicals ─────────────────────────────────────────
 DEVOPS_PRACTICALS=(
-    "1|practical-1|Docker Flask App|Dockerfile,app.py,requirements.txt,templates/form.html,templates/success.html,theory.md"
-    "2|practical-2|DevOps Practical 2|practical.md,theory.md"
-    "5|practical-5|Docker Node.js App|Dockerfile,app.js,docker-commands.md,package-lock.json,package.json,views/index.ejs"
-    "8|practical-8|Node.js Testing|index.html,package-lock.json,package.json,test.js"
-    "9|practical-9|Docker Node.js CI/CD|Dockerfile,app.js,package-lock.json,package.json,test.js,views/index.ejs"
+    "1|practical-1|User Registration with Flask and Docker|Dockerfile,app.py,requirements.txt,templates/form.html,templates/success.html,theory.md"
+    "2|practical-2|Git and GitHub Source Code Management|practical.md,theory.md"
+    "5|practical-5|Docker Commands for Content Management|Dockerfile,app.js,docker-commands.md,package-lock.json,package.json,views/index.ejs"
+    "8|practical-8|JavaScript Testing using Selenium|index.html,package-lock.json,package.json,test.js"
+    "9|practical-9|Selenium Test Cases for Containerized App|Dockerfile,app.js,package-lock.json,package.json,test.js,views/index.ejs"
 )
 
 # ── Course Selection ──────────────────────────────────────────
