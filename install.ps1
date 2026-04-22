@@ -9,22 +9,22 @@ $repoBase = "https://raw.githubusercontent.com/ashleyxdev/sl-suite/main"
 
 # ── Deep Learning Practicals ──────────────────────────────────
 $dlPracticals = @(
-    @{ id = 1; folder = "practical-1"; desc = "Vector Addition";
+    @{ id = 1; folder = "practical-1"; desc = "Vector Addition in TensorFlow";
        files = @("practical-1.ipynb", "readme.md", "setup.md", "vector-addition.py") },
 
     @{ id = 2; folder = "practical-2"; desc = "MLP with NumPy & PyTorch";
        files = @("setup.md", "theory.md") },
 
-    @{ id = 3; folder = "practical-3"; desc = "CNN Image Classification";
+    @{ id = 3; folder = "practical-3"; desc = "CNN for Image Classification";
        files = @("setup.md", "theory.md") },
 
     @{ id = 4; folder = "practical-4"; desc = "RNN & LSTM Sentiment Analysis";
        files = @("setup.md", "theory.md") },
 
-    @{ id = 5; folder = "practical-5"; desc = "DCGAN";
+    @{ id = 5; folder = "practical-5"; desc = "DCGAN Image Generation";
        files = @("setup.md", "theory.md") },
 
-    @{ id = 6; folder = "practical-6"; desc = "DQN Reinforcement Learning";
+    @{ id = 6; folder = "practical-6"; desc = "DNN Agents in Simulated Environment";
        files = @("setup.md", "theory.md") }
 )
 
@@ -79,9 +79,7 @@ Write-Host ""
 
 # Display practicals menu
 foreach ($p in $practicals) {
-    $fileList = $p.files -join ", "
     Write-Host "  $($p.id). $($p.desc)"
-    Write-Host "     [$($p.folder)] $fileList"
 }
 
 # Prompt for choice
@@ -120,9 +118,8 @@ foreach ($file in $selected.files) {
 
     try {
         Invoke-WebRequest -Uri $fileUrl -OutFile $outPath -ErrorAction Stop
-        Write-Host "  ✅ $file"
     } catch {
-        Write-Host "  ❌ Failed: $file"
+        Write-Host "  ❌ Failed to download: $file"
         $failed = $true
     }
 }

@@ -12,12 +12,12 @@ REPO_BASE="https://raw.githubusercontent.com/ashleyxdev/sl-suite/main"
 # ── Deep Learning Practicals ──────────────────────────────────
 # Format: ID|FOLDER|DESCRIPTION|FILE1,FILE2,...
 DL_PRACTICALS=(
-    "1|practical-1|Vector Addition|practical-1.ipynb,readme.md,setup.md,vector-addition.py"
+    "1|practical-1|Vector Addition in TensorFlow|practical-1.ipynb,readme.md,setup.md,vector-addition.py"
     "2|practical-2|MLP with NumPy & PyTorch|setup.md,theory.md"
-    "3|practical-3|CNN Image Classification|setup.md,theory.md"
+    "3|practical-3|CNN for Image Classification|setup.md,theory.md"
     "4|practical-4|RNN & LSTM Sentiment Analysis|setup.md,theory.md"
-    "5|practical-5|DCGAN|setup.md,theory.md"
-    "6|practical-6|DQN Reinforcement Learning|setup.md,theory.md"
+    "5|practical-5|DCGAN Image Generation|setup.md,theory.md"
+    "6|practical-6|DNN Agents in Simulated Environment|setup.md,theory.md"
 )
 
 # ── DevOps Practicals ─────────────────────────────────────────
@@ -63,9 +63,7 @@ echo ""
 # Display practicals menu
 for entry in "${PRACTICALS[@]}"; do
     IFS='|' read -r id folder desc files <<< "$entry"
-    file_list="${files//,/, }"
     echo "  $id. $desc"
-    echo "     [$folder] $file_list"
 done
 
 # Build valid IDs string
@@ -121,9 +119,9 @@ for file in "${FILE_ARRAY[@]}"; do
     fi
 
     if curl -fsSL "$FILE_URL" -o "$OUT_PATH"; then
-        echo "  ✅ $file"
+        :
     else
-        echo "  ❌ Failed: $file"
+        echo "  ❌ Failed to download: $file"
         FAILED=1
     fi
 done
