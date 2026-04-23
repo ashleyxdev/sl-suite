@@ -36,6 +36,9 @@ $devopsPracticals = @(
     @{ id = 2; folder = "practical-2"; desc = "Git and GitHub Source Code Management";
        files = @("practical.md", "theory.md") },
 
+    @{ id = 3; folder = "practical-3"; desc = "Jenkins Installation and CI/CD Setup";
+       files = @("setup.md", "theory.md") },
+
     @{ id = 5; folder = "practical-5"; desc = "Docker Commands for Content Management";
        files = @("Dockerfile", "app.js", "docker-commands.md", "package-lock.json", "package.json", "views/index.ejs") },
 
